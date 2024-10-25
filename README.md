@@ -25,8 +25,8 @@ The Fruit Classifier is a Streamlit web application that uses machine learning m
 
 1. Clone this repository:
    ```
-   git clone https://github.com/your-username/fruit-classifier.git
-   cd fruit-classifier
+   git clone https://github.com/Pranav-Lejith/FruitClassiffier.git
+   cd FruitClassiffier
    ```
 
 2. Install the required packages:
