@@ -10,7 +10,6 @@ HELP_CONTENT = """
 h2 {color: #4CAF50;}
 h3 {color: #2196F3;}
 strong {color: #FF9800;}
-red {color: #C7253E;}
 </style>
 <h2>Fruit Classifier App Explanation</h2>
 <p>This Streamlit app classifies fruits as fresh or rotten using TensorFlow Lite models. Here's how it works:</p>
@@ -40,7 +39,7 @@ red {color: #C7253E;}
     <li>Sidebar with model accuracy information and project details.</li>
     <li>Custom page configuration with title and icon.</li>
 </ul>
-<p>Created by <strong>Pranav Lejith (Amphibiar)<red> (IX-K)</red> </strong> .</p>
+<p>Created by <strong>Pranav Lejith (Amphibiar)(Developer)</strong>.</p>
 """
 
 # Initialize session state
@@ -93,7 +92,7 @@ def prepare_image(image, model_selection):
 
 # Sidebar content
 with st.sidebar:
-    st.title(" :violet[Choose the model]")
+    st.title(" :orange[Choose the model]")
     
     # Model selection moved to sidebar
     model_selection = st.selectbox(
@@ -128,7 +127,7 @@ with st.sidebar:
         | Creatus Model                       | High(Low-diff) | Fresh, Rotten   |
         """)
 
-    st.sidebar.title("🌟 :green[About the Project]")
+    st.sidebar.title("🌟 About the Project")
     st.sidebar.write("""
     This project uses machine learning models to classify images of fruits as either fresh or rotten.
 
@@ -137,12 +136,12 @@ with st.sidebar:
     Created for AI Project.
     """)
 
-    st.sidebar.title("💡 :blue[Note]")
+    st.sidebar.title("💡 Note")
     st.sidebar.write("""
     This model is still in development and may not always be accurate. Please ensure the image is clear and well-lit for better results.
     """)
 
-    st.sidebar.title("🛠️ :red[Functionality]")
+    st.sidebar.title("🛠️ Functionality")
     st.sidebar.write("""
     This AI model uses convolutional neural networks (CNNs) to analyze images of fruits. The model has been trained to classify fruits into two categories: fresh or rotten.
     """)
@@ -150,6 +149,15 @@ with st.sidebar:
     # "Get Help" button moved to the bottom of the sidebar
     if st.button("Get Help"):
         st.session_state.show_help = True
+
+    # "Open Creatus Model Creator" button
+    st.markdown(
+        '<a href="https://creatus.streamlit.app" target="_blank">'
+        '<button style="width:100%;">Open Creatus Model Creator</button>'
+        '</a>',
+        unsafe_allow_html=True
+    )
+
 
 # Display help content if triggered
 if st.session_state.show_help:
