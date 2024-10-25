@@ -71,10 +71,10 @@ This project is open source and available under the [MIT License](LICENSE).
 
 ## Creator
 
-Created by Pranav Lejith (Amphibiar) for an AI Project.
+Created by Pranav Lejith (Amphibiar)(Developer)
 
 ## Acknowledgments
 
 - TensorFlow and Keras communities
-- Streamlit team for their excellent framework
+- Streamlit for their hosting framework
 - Google's Teachable Machine platform
